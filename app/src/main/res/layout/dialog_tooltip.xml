@@ -1,0 +1,64 @@
+<com.daasuu.bl.BubbleLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="12dp"
+    android:padding="8dp"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="8dp"
+    app:bl_arrowPosition="12dp"
+    app:bl_arrowWidth="8dp"
+    app:bl_bubbleColor="@android:color/holo_blue_light"
+    app:bl_cornersRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/container_dialog_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1D3461"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_confirmation_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            tools:targetApi="jelly_bean"
+            android:text="A real-time financial score from 0 to 10"
+            android:gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_confirmation_negative"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_dialog_confirmation_positive"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="ok"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.daasuu.bl.BubbleLayout>
